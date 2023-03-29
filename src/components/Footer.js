@@ -18,7 +18,7 @@ const Footer = () => {
                   alt="FlowBite Logo"
                 />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap ">
-                  Flowbite
+                  Dilshod.dev
                 </span>
               </a>
             </div>
