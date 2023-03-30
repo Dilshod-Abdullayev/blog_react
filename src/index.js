@@ -4,12 +4,14 @@ import "./index.css";
 import App from "./App";
 import Mode__context from "./context/ModeContext";
 import { BrowserRouter } from "react-router-dom";
-
+import { HelmetProvider } from "react-helmet-async";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Mode__context>
-      <App />
-    </Mode__context>
-  </BrowserRouter>
+  <HelmetProvider>
+    <BrowserRouter>
+      <Mode__context>
+        <App />
+      </Mode__context>
+    </BrowserRouter>
+  </HelmetProvider>
 );
