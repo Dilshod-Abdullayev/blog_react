@@ -2,7 +2,7 @@ import React from "react";
 
 const Maket = () => {
   return (
-    <div className="flex justify-around flex-wrap">
+    <div className="flex justify-around flex-wrap z-0	">
       <div class="max-w-md mx-auto mt-8 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-500 transform hover:-translate-y-1 hover:scale-110">
         <img
           class="h-48 w-full object-cover"

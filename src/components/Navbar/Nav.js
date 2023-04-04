@@ -7,13 +7,14 @@ export default function Nav() {
   const [navbar, setNavbar] = useState(false);
   return (
     <nav
-      className={`w-full sticky top-0 z-5 shadow select-none ${dark ? "bg-slate-900  text-white" : "bg-slate-50  text-slate-900"
-        }`}
+      className={`w-full sticky top-0 z-30 shadow select-none ${
+        dark ? "bg-slate-900  text-white" : "bg-slate-50  text-slate-900"
+      }`}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="javascript:void(0)" to='/' >
+            <Link href="javascript:void(0)" to="/">
               <h2 className="text-2xl font-bold">Dilshod.dev</h2>
             </Link>
             <div className="md:hidden">
@@ -56,28 +57,33 @@ export default function Nav() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className=" text-2xl hover:text-indigo-200"  >
-                <Link href="javascript:void(0)" to='news'>Yangiliklar</Link>
+            <ul className="items-center  max-w-5xl:text-xl justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className=" text-2xl  sm:text-xl lg:text-2xl  hover:text-indigo-200">
+                <Link href="javascript:void(0)" to="news">
+                  Yangiliklar
+                </Link>
               </li>
-              <li className=" text-2xl hover:text-indigo-200">
-                <Link href="javascript:void(0)"  to='projects'>Project</Link>
+              <li className=" text-2xl  sm:text-xl lg:text-2xl hover:text-indigo-200">
+                <Link href="javascript:void(0)" to="projects">
+                  Project
+                </Link>
               </li>
-              <li className=" text-2xl hover:text-indigo-200" >
-                <Link href="javascript:void(0)" to='about'>Men haqimda</Link>
+              <li className=" text-2xl  sm:text-xl lg:text-2xl hover:text-indigo-200">
+                <Link href="javascript:void(0)" to="about">
+                  Men haqimda
+                </Link>
               </li>
-              <li className=" text-2xl hover:text-indigo-200" >
-                <Link href="javascript:void(0)" to='edit'>code tahrir</Link>
-              </li>
-              <li className=" text-2xl hover:text-indigo-200" >
-                <Link href="javascript:void(0)" to='contact'>Contact</Link>
+              <li className=" text-2xl  sm:text-xl lg:text-2xl hover:text-indigo-200">
+                <Link href="javascript:void(0)" to="edit">
+                  code tahrir
+                </Link>
               </li>
             </ul>
-            <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-              {/* <BsFillMoonFill className="text-white text-2xl" /> */}
+            <div className="mt-3 space-y-2 md:inline-block lg:hidden">
               {dark ? (
                 <BsFillMoonFill
                   onClick={handleDark}

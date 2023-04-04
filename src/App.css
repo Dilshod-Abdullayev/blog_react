@@ -1,3 +1,7 @@
 body{
   background-color: #ccc;
 }
+.container{
+  max-width: 1368px;
+  margin: 0 auto;
+}
